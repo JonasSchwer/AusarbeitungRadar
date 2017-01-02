@@ -1,0 +1,168 @@
+% !TeX encoding = UTF-8
+% maindoc
+
+
+
+\documentclass[a4paper,12pt,oneside,german,toc=bibliography]{scrbook} 
+
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,amscd,amsbsy,amsxtra,amsthm}
+
+\usepackage[alphabetic,nobysame,bibtex-style]{amsrefs}
+\makeatletter
+\renewcommand\PrintNames@a[4]{%
+    \PrintSeries{\name}
+    {#1}
+    {}{ und \set@othername}
+    {;}{ \set@othername}
+    {}{ und \set@othername}
+    {#2}{#4}{#3}%
+}
+\makeatother
+
+
+\usepackage{dsfont}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{upgreek,textcomp}
+\usepackage{cleveref}
+\usepackage[Algorithmus]{algorithm}
+\usepackage{algpseudocode}
+\usepackage[autostyle=true,german=quotes]{csquotes}
+\usepackage{ziffer}
+\usepackage{booktabs}
+
+\makeatletter
+\newcommand{\specialcell}[1]{\ifmeasuring@#1\else\omit$\displaystyle#1$\ignorespaces\fi}
+\makeatother
+
+\usepackage[numbered,autolinebreaks,bw]{mcode}   %framed
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+\newtheorem{bem}[defn]{Bemerkung}
+
+\theoremstyle{plain}
+\newtheorem{satz}[defn]{Satz}
+\newtheorem{lem}[defn]{Lemma}
+\newtheorem{prop}[defn]{Proposition}
+\newtheorem{kor}[defn]{Korollar}
+
+\numberwithin{equation}{section}
+
+\DeclareMathOperator{\cond}{cond}
+\DeclareMathOperator{\spn}{span}
+\DeclareMathOperator{\diag}{diag}
+
+
+\newcommand{\R}{\mathds{R}}
+\newcommand{\C}{\mathds{C}}
+\newcommand{\N}{\mathds{N}}
+\newcommand{\Q}{\mathds{Q}}
+\newcommand{\la}{\lambda}
+\newcommand{\calV}{\mathcal{V}}
+\newcommand{\calW}{\mathcal{W}}
+\newcommand{\calP}{\mathcal{P}}
+\newcommand{\calO}{\mathcal{O}}
+\newcommand{\mPhi}{\mathit{\Phi}}
+\newcommand{\eqItem}{\item~\vspace{-2\normalbaselineskip}}
+\newcommand{\imaginary}{\mathrm{i}}
+\newcommand{\LskalProd}{(\,\cdot\,,\,\cdot\,)_w}
+
+\let\vphi=\phi
+\renewcommand{\phi}{\varphi}
+
+\newcommand{\transp}[1]{#1^\mathrm{T}}
+
+
+\begin{document}
+
+\input{Titelblatt}
+
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Theorie}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Funktionsweise eines Radars} 
+    \input{Aufbau}
+    \input{Puls-Doppler-Radar}
+    \input{Signale}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Radarsignalverarbeitung}
+    \input{Pulskompression}
+    \input{Dopplerfilterung}
+    \input{Betrags-Bildung}
+    \input{CFAR}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Fouriertransformation}
+    \input{KFT}
+    \input{DFT}
+    \input{FFT}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{OpenCL}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{Projekt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Anforderungen}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Implementierung}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Verifikation}
+    \subsection{Tests}     
+    \subsection{Benchmarks}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Zusammenfassung und Fazit}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\appendix
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Algorithmen}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Quellcode}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\input{Literatur}
+
+
+\end{document}

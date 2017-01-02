@@ -1,0 +1,35 @@
+\BOOKMARK [0][-]{chapter.1}{Einleitung}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Ziel der Arbeit}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Aufbau}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Die Symmsche Integralgleichung}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Galerkin-Matrix}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{L\366sen des Gleichungssystems mit dem CG-Verfahren}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.3}{Durchf\374hrung der numerischen Experimente}{chapter.2}% 8
+\BOOKMARK [0][-]{chapter.3}{Das PCG-Verfahren und einige einfache Pr\344konditionierer}{}% 9
+\BOOKMARK [1][-]{section.3.1}{Das PCG-Verfahren}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.2}{Zur Wahl eines Pr\344konditionierers}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.3}{Diagonalskalierung}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.4}{Pr\344konditionierung mit einer Iterationsmatrix}{chapter.3}% 13
+\BOOKMARK [0][-]{chapter.4}{Basiswechsel}{}% 14
+\BOOKMARK [1][-]{section.4.1}{Orthogonalpolynome}{chapter.4}% 15
+\BOOKMARK [2][-]{subsection.4.1.1}{Legendre-Polynome}{section.4.1}% 16
+\BOOKMARK [2][-]{subsection.4.1.2}{Tschebyscheff-Polynome}{section.4.1}% 17
+\BOOKMARK [1][-]{section.4.2}{Basistransformation}{chapter.4}% 18
+\BOOKMARK [2][-]{subsection.4.2.1}{Die Basistransformationsmatrix}{section.4.2}% 19
+\BOOKMARK [2][-]{subsection.4.2.2}{Wechsel von Legendre- in Monomialbasis}{section.4.2}% 20
+\BOOKMARK [2][-]{subsection.4.2.3}{Wechsel von Tschebyscheff- in Monomialbasis}{section.4.2}% 21
+\BOOKMARK [2][-]{subsection.4.2.4}{Basiswechsel zwischen Legendre- und Tschebyscheff-Polynomen}{section.4.2}% 22
+\BOOKMARK [2][-]{subsection.4.2.5}{Allgemeine Basistransformationsmatrix f\374r Orthogonalpolynome}{section.4.2}% 23
+\BOOKMARK [1][-]{section.4.3}{Pr\344konditionierung der Galerkin-Matrix durch Basistransformationen}{chapter.4}% 24
+\BOOKMARK [2][-]{subsection.4.3.1}{Basiswechsel der Galerkin-Matrix}{section.4.3}% 25
+\BOOKMARK [2][-]{subsection.4.3.2}{Die Galerkin-Matrix in Tschebyscheff- und Monomialbasis}{section.4.3}% 26
+\BOOKMARK [0][-]{chapter.5}{Pr\344konditionierung unter Ber\374cksichtigung der Herkunft der Galerkin-Matrix}{}% 27
+\BOOKMARK [1][-]{section.5.1}{Strategie}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.2}{Diskretisierung des Einfachschichtpotentials und des hypersingul\344ren Operators}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.3}{Aufstellen und Anwenden des neuen Pr\344konditionierers}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.4}{Wirkung im PCG-Verfahren}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.5}{Absch\344tzung des Residuums}{chapter.5}% 32
+\BOOKMARK [0][-]{chapter.6}{Zusammenfassung}{}% 33
+\BOOKMARK [0][-]{appendix.A}{Algorithmen}{}% 34
+\BOOKMARK [0][-]{appendix.B}{Matlab-Programme}{}% 35
