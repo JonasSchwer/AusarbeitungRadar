@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.14)  1 JAN 2017 21:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.14)  3 JAN 2017 13:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1092,6 +1092,11 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
+
+Package amsrefs Warning: Use of \cites is recommended instead of \cite 
+(amsrefs)                for multiple cites 'Richards,RSH,Ludloff' on input lin
+e 91.
+
 (./Aufbau.tex) (./Puls-Doppler-Radar.tex) (./Signale.tex)
 (./Pulskompression.tex) (./Dopplerfilterung.tex) (./Betrags-Bildung.tex)
 (./CFAR.tex) (./KFT.tex) (./DFT.tex) (./FFT.tex) [3
@@ -1112,15 +1117,21 @@ chapter B.
 (./Literatur.tex [6
 
 
-]) [7
+]
+Underfull \hbox (badness 2005) in paragraph at lines 35--35
+[]\OT1/cmr/m/n/10 Ludloff, Al-brecht. \OT1/cmr/m/it/10 Pra-xis-wis-sen Ra-dar u
+nd Ra-dar-si-gnal-ver-ar-bei-tung\OT1/cmr/m/n/10 . View-eg, Braun-
+ []
+
+) [7
 
 
 ] (./maindoc.aux) ) 
 Here is how much of TeX's memory you used:
- 13017 strings out of 493029
- 201069 string characters out of 6136234
- 372751 words of memory out of 5000000
- 16289 multiletter control sequences out of 15000+600000
+ 13026 strings out of 493029
+ 201192 string characters out of 6136234
+ 373751 words of memory out of 5000000
+ 16298 multiletter control sequences out of 15000+600000
  15760 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,7n,80p,815b,664s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1131,7 +1142,7 @@ m/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on maindoc.pdf (7 pages, 127011 bytes).
+Output written on maindoc.pdf (7 pages, 130804 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
