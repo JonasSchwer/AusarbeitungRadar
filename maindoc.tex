@@ -88,13 +88,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Theorie}
-In diesem Kapitel soll die Funktionsweise eines Radar-Systems (\textbf{ra}dio \textbf{d}etection \textbf{a}nd \textbf{r}anging) und dessen Signalverarbeitungsalgorithmen sowie einige mathematische Grundlagen kurz erläutert werden, wie sie ausführlicher auch in \cite{Richards,RSH,Ludloff} nachzulesen sind. Zudem wird eine grundlegende Einführung in die Programmierschnittstelle OpenCL gegeben, mit welcher eine Programmierung für Grafikprozessoren umgesetzt werden kann.
+In diesem Kapitel soll die Funktionsweise eines Radar-Systems (\textbf{ra}dio \textbf{d}etection \textbf{a}nd \textbf{r}anging) und dessen Signalverarbeitungsalgorithmen sowie einige mathematische Grundlagen kurz erläutert werden, wie sie ausführlicher auch in \cites{Richards,RSH,Ludloff} nachzulesen sind. Zudem wird eine grundlegende Einführung in die Programmierschnittstelle OpenCL gegeben, mit welcher eine Programmierung für Grafikprozessoren umgesetzt werden kann.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Funktionsweise eines Radars} 
-    \input{Aufbau}
-    \input{Puls-Doppler-Radar}
-    \input{Signale}
+
+Dieses Unterkapitel behandelt die Funktionsweise eines Radars. Falls nicht anders angegeben, stammen die hier zusammengetragenen Informationen aus \cite[Kapitel 1]{Richards} und \cite[Kapitel 1]{Ludloff}.
+
+Die Hauptaufgabe eines Radars besteht darin, Objekte mittels Radiowellen zu detektieren und deren Position zu bestimmen. Dazu werden elektromagnetische Wellen über die Antenne des Radars emittiert. Diese werden an Objekten, die sich im Sichtfeld des Radars befinden, reflektiert und gelangen als \glqq  Echo \grqq wieder zum Radar zurück. Elektromagnetische Wellen bewegen sich in Luft (in guter Näherung) mit Lichtgeschwindigkeit, also mit knapp \(300000 km/s\) fort. Die Zeit zwischen dem Aussenden und dem Empfangen der Radiowelle wird als \glqq Laufzeit\grqq bezeichnet. Anhand der Laufzeit, lässt sich über eine einfache Formel der Abstand zwischen dem Radar und einem reflektierenden Objekt berechnen. Neben der Entfernungsmessung sind moderne Radarsysteme dazu in der Lage, die Geschwindigkeit von detektierten Objekten zu messen (Doppler-Filterung), den Typ der Ziele zu bestimmen (Klassifikation) und deren Position nachzuverfolgen (Tracking).
+
+Es gibt eine Vielzahl von verschiedenen Radar-Typen, die sich in ihrer Funktionsweise beispielsweise hinsichtlich der Sendefrequenz, Sendeleistung  oder Bauart unterscheiden. Dementsprechend existiert heute eine große Anzahl von Anwendungsmöglichkeiten, sowohl im zivilen als auch im militärischen Bereich. Im Zuge dieses Projekts wird ausschließlich ein sogenanntes \glqq Puls-Doppler-Radar\grqq  betrachtet. 
+
+\input{Puls-Doppler-Radar}
+\input{Aufbau}
+\input{Signale}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
